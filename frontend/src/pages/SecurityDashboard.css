@@ -1,0 +1,266 @@
+.security-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.security-header {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #ef4444;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-title h1 {
+  margin: 0;
+}
+
+.header-icon {
+  color: #ef4444;
+}
+
+.security-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.stats-box {
+  background: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.stats-label {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.stats-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.no-flags {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.success-icon {
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+.flags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.flag-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.risk-critical {
+  border-top: 5px solid #ef4444;
+}
+
+.risk-moderate {
+  border-top: 5px solid #f59e0b;
+}
+
+.risk-low {
+  border-top: 5px solid #3b82f6;
+}
+
+.card-header {
+  padding: 1.5rem;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.user-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.user-email {
+  color: #64748b;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+.risk-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.risk-critical .risk-badge {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.risk-moderate .risk-badge {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.risk-low .risk-badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.score-value {
+  font-weight: 700;
+  color: #ef4444;
+  font-size: 1.125rem;
+}
+
+.flags-list {
+  margin-bottom: 1.5rem;
+}
+
+.flags-list strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #334155;
+  font-size: 0.875rem;
+}
+
+.flags-list ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #475569;
+  font-size: 0.875rem;
+}
+
+.flags-list li {
+  margin-bottom: 0.25rem;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-active {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.status-banned {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.card-actions {
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
